@@ -8,9 +8,15 @@ class Category extends Model {}
 //initialize category model
 Category.init(
   {
-    // define columns
-    id: {
-
+    // category_id set as primary key for category model
+    category_id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    }
+    category_name: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   },
 
@@ -20,6 +26,7 @@ Category.init(
     sequelize,
     timestamps: false,
     //enforcing that model name is same as table name
+    //Prevent sequelize from renaming the table
     freezeTableName: true,
     underscored: true,
     modelName: 'category',
