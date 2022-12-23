@@ -8,8 +8,8 @@ class Category extends Model {}
 //initialize category model
 Category.init(
   {
-    // category_id set as primary key for category model
-    category_id: {
+    // id set as primary key for category model
+    id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true
