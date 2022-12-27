@@ -1,6 +1,9 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
+
+
+
 // The `/api/products` endpoint
 
 // get all products
@@ -62,6 +65,8 @@ router.get('/:id', (req, res) => {
 
 
 
+
+
 // create new product
 router.post('/', (req, res) => {
   Product.create({
@@ -94,7 +99,8 @@ router.post('/', (req, res) => {
 
 
 
-// UPDATE COMPLETE
+
+
 // update product
 router.put('/:id', (req, res) => {
   // update product data
@@ -136,6 +142,9 @@ router.put('/:id', (req, res) => {
       res.status(400).json(err);
     });
 });
+
+
+
 
 
 
