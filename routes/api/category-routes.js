@@ -2,8 +2,6 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 
-
-
 // The `/api/categories` endpoint
 
 router.get('/', (req, res) => {
@@ -46,8 +44,8 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new category
-  Tag.create({
-    tag_name: req.body.tag_name
+  Category.create({
+    category_name: req.body.tag_name
   })
   .then(dbCategoryData => res.json(dbCategoryData))
   .catch(err => {
@@ -61,14 +59,14 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
-  Tag.update(req.body, {
+  Category.update(req.body, {
     where: {
       id: req.params.id
     }
   })
     .then(dbCategoryData => {
       if(!dbCategoryData) {
-        res.status(404).json({message: "No Tag with this ID"});
+        res.status(404).json({message: "No Category with this ID"});
         return;
       }
       res.json(dbCategoryData);
@@ -78,20 +76,18 @@ router.put('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-
-
 
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
-  Tag.destroy({
+  Category.destroy({
     where: {
       id: req.params.id
     }
   })
     .then(dbCategoryData => {
       if(!dbCategoryData) {
-        res.status(404).json({message: "No Tag with this ID"});
+        res.status(404).json({message: "No category with this ID"});
         return;
       }
       res.json(dbCategoryData);
@@ -101,8 +97,6 @@ router.delete('/:id', (req, res) => {
       res.status(500).json(err);
     });
 });
-
-
 
 
 module.exports = router;
