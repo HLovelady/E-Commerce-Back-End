@@ -1,12 +1,13 @@
-# Module 13 E-Commerce Back End
-![License Badge](https://shields.io/badge/license-MIT-green)
+# E-Commerce Back End
+![Badge](https://img.shields.io/badge/license-MPL-blue.svg)
 ## Table of Contents
 ------------
 - [Description](#description)
 - [Installation](#installation)
-- [Testing](#testing)
+- [Usage](#usage)
 - [Contribution](#contribution)
-- [Mock-Up](#mock-Up)
+- [Demo Video](#demo-video)
+- [Mock Up](#mock-Up)
 - [License](#license)
 - [Contact](#contact)
 
@@ -21,14 +22,14 @@ This project is designed to add back end to existing code for an E-commerce webs
  3. Source and seed the database by running the ``` schema.sql ``` file and ``` seeds/index.js ```
  4. Finally, run ``` npm start ``` to begin the server
 
-## Testing
+## Usage
 ------------
-No tests written for this project!
+Below is a walk-through video for how to use this application. It will be initialized from the command line, and the routes will be run through the insomnia application.
 
 ## Contribution
 ------------
 
-Please refer to each project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
+In general, we follow the "fork-and-pull" Git workflow.
 
  1. **Fork** the repo on GitHub
  2. **Clone** the project to your own machine
