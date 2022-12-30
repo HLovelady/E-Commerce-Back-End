@@ -25,6 +25,7 @@ router.get('/', (req, res) => {
   });
 });
 
+// --> '/api/categories/:id
 router.get('/:id', (req, res) => {
   // find one category by its `id` value
   // be sure to include its associated Products
@@ -51,6 +52,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+  console.log(req.body);
   // create a new category
   Category.create({
     category_name: req.body.category_name
