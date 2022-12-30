@@ -5,9 +5,9 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contribution](#contribution)
 - [Demo Video](#demo-video)
 - [Mock Up](#mock-Up)
+- [Contribution](#contribution)
 - [License](#license)
 - [Contact](#contact)
 
@@ -26,6 +26,13 @@ This project is designed to add back end to existing code for an E-commerce webs
 ------------
 Below is a walk-through video for how to use this application. It will be initialized from the command line, and the routes will be run through the insomnia application.
 
+## Demo Video
+------------
+
+## Mock-Up
+------------
+(![E-Commerce-Backend](./assets/))
+
 ## Contribution
 ------------
 
@@ -38,13 +45,6 @@ In general, we follow the "fork-and-pull" Git workflow.
  5. Submit a **Pull request** so that we can review your changes
 
 NOTE: Be sure to merge the latest from "upstream" before making a pull request!
-
-## Demo Video
-------------
-
-## Mock-Up
-------------
-(![E-Commerce-Backend](./assets/))
 
 ## License
 ------------
